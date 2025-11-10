@@ -288,3 +288,17 @@
     flex: 1 1 200px;
     min-width: 200px;
 }
+
+## 10. Какие преимущества дает использование gap вместо margins для создания промежутков между flex-элементами?
+
+**Преимущества использования gap:**
+
+1. **Простота и удобство** - один свойство вместо множества margin-правил
+   ```css
+   /* С gap */
+   .container { gap: 20px; }
+   
+   /* С margin */
+   .item { margin-right: 20px; margin-bottom: 20px; }
+   .item:nth-child(n) { margin-right: 0; }
+   .item:last-child { margin-bottom: 0; }
